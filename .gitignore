@@ -1,0 +1,29 @@
+# Gradle files
+.gradle/
+build/
+app/build/
+
+# Local configuration
+local.properties
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Built APKs
+# We don't want to commit the build outputs, but we allow copying manually
+# and testing locally. If you want to commit the pre-built APK, remove this line.
+# For now we exclude it to keep the repository lightweight.
+*.apk
+
+# Node test outputs / logs
+node_modules/
+.system_generated/
+*.log
