@@ -128,7 +128,7 @@ fun SettingsScreen(
                     }
                 }
 
-                HorizontalDivider(color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f))
+                Divider(color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f))
 
                 // Language Selector
                 Box {
@@ -181,10 +181,10 @@ fun SettingsScreen(
                         .fillMaxWidth()
                         .padding(vertical = 12.dp, horizontal = 4.dp),
                     horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertizontally
+                    verticalAlignment = Alignment.CenterVertically
                 ) {
                     Row(
-                        verticalAlignment = Alignment.CenterVertizontally,
+                        verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier.weight(1f)
                     ) {
                         Icon(
@@ -232,7 +232,7 @@ fun SettingsScreen(
                     }
                 }
 
-                HorizontalDivider(color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f))
+                Divider(color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f))
 
                 SettingsActionRow(
                     icon = Icons.Default.Delete,
@@ -242,7 +242,7 @@ fun SettingsScreen(
                     onClick = { showClearHistoryDialog = true }
                 )
 
-                HorizontalDivider(color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f))
+                Divider(color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f))
 
                 SettingsActionRow(
                     icon = Icons.Default.HeartBroken,
@@ -324,7 +324,7 @@ fun SettingsRow(
             .clip(RoundedCornerShape(8.dp))
             .clickable { onClick() }
             .padding(vertical = 8.dp, horizontal = 4.dp),
-        verticalAlignment = Alignment.CenterVertizontally
+        verticalAlignment = Alignment.CenterVertically
     ) {
         Icon(
             imageVector = icon,
@@ -368,7 +368,7 @@ fun SettingsActionRow(
             .clip(RoundedCornerShape(8.dp))
             .clickable { onClick() }
             .padding(vertical = 8.dp, horizontal = 4.dp),
-        verticalAlignment = Alignment.CenterVertizontally
+        verticalAlignment = Alignment.CenterVertically
     ) {
         Icon(
             imageVector = icon,

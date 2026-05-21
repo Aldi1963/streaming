@@ -30,7 +30,7 @@ fun ProviderSelector(
                 .background(MaterialTheme.colorScheme.surfaceVariant)
                 .clickable { expanded = true }
                 .padding(horizontal = 16.dp, vertical = 8.dp),
-            verticalAlignment = Alignment.CenterVertizontally,
+            verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             Icon(

@@ -84,7 +84,7 @@ fun ApiTesterScreen(
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceBetween,
-                        verticalAlignment = Alignment.CenterVertizontally
+                        verticalAlignment = Alignment.CenterVertically
                     ) {
                         Text("Provider:", fontWeight = FontWeight.SemiBold)
                         Box {
@@ -114,7 +114,7 @@ fun ApiTesterScreen(
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceBetween,
-                        verticalAlignment = Alignment.CenterVertizontally
+                        verticalAlignment = Alignment.CenterVertically
                     ) {
                         Text("Endpoint:", fontWeight = FontWeight.SemiBold)
                         Box {
@@ -170,7 +170,7 @@ fun ApiTesterScreen(
                     uiState.queryParams.forEachIndexed { index, param ->
                         Row(
                             modifier = Modifier.fillMaxWidth(),
-                            verticalAlignment = Alignment.CenterVertizontally,
+                            verticalAlignment = Alignment.CenterVertically,
                             horizontalArrangement = Arrangement.spacedBy(8.dp)
                         ) {
                             OutlinedTextField(
@@ -201,7 +201,7 @@ fun ApiTesterScreen(
                     // Add new parameter row
                     Row(
                         modifier = Modifier.fillMaxWidth(),
-                        verticalAlignment = Alignment.CenterVertizontally,
+                        verticalAlignment = Alignment.CenterVertically,
                         horizontalArrangement = Arrangement.spacedBy(8.dp)
                     ) {
                         OutlinedTextField(
@@ -314,13 +314,13 @@ fun ApiTesterScreen(
                             }
                         }
 
-                        HorizontalDivider(color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f))
+                        Divider(color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f))
 
                         // Response payload details
                         Row(
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.SpaceBetween,
-                            verticalAlignment = Alignment.CenterVertizontally
+                            verticalAlignment = Alignment.CenterVertically
                         ) {
                             Text("Response Body:", fontWeight = FontWeight.SemiBold, style = MaterialTheme.typography.bodyMedium)
                             
