@@ -22,6 +22,7 @@ object ApiClient {
             .connectTimeout(Constants.TIMEOUT_SECONDS, TimeUnit.SECONDS)
             .readTimeout(Constants.TIMEOUT_SECONDS, TimeUnit.SECONDS)
             .writeTimeout(Constants.TIMEOUT_SECONDS, TimeUnit.SECONDS)
+            .retryOnConnectionFailure(true)
             .addInterceptor(HttpLoggingInterceptor().apply {
                 level = HttpLoggingInterceptor.Level.BODY
             })
